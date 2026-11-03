@@ -1,0 +1,54 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "stride-skills",
+  "description": "Andy Ireland's go-to skills for design, writing, marketing and steering AI.",
+  "owner": {
+    "name": "Andy Ireland",
+    "url": "https://github.com/Andrewi89"
+  },
+  "plugins": [
+    {
+      "name": "design",
+      "source": "./plugins/design",
+      "description": "Apple-style interface design skills and design copy.",
+      "category": "design"
+    },
+    {
+      "name": "writing",
+      "source": "./plugins/writing",
+      "description": "Conversational voice, anti-slop rules and Ogilvy-style copy.",
+      "category": "productivity"
+    },
+    {
+      "name": "marketing",
+      "source": "./plugins/marketing",
+      "description": "Marketing and product-led growth for tech products.",
+      "category": "productivity"
+    },
+    {
+      "name": "steering",
+      "source": "./plugins/steering",
+      "description": "Engineering principles and working preferences.",
+      "category": "productivity"
+    },
+    {
+      "name": "impeccable",
+      "description": "Design critique, polish and anti-pattern detection (upstream, Apache 2.0).",
+      "category": "design",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pbakaus/impeccable.git",
+        "path": "plugin"
+      }
+    },
+    {
+      "name": "ponytail",
+      "description": "Pushes toward the simplest working solution (upstream, MIT).",
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/DietrichGebert/ponytail.git"
+      }
+    }
+  ]
+}

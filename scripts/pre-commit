@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+bash scripts/check.sh && bash scripts/leak-scan.sh

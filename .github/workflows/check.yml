@@ -1,0 +1,18 @@
+name: check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash scripts/check.sh
+      - name: Leak scan (skipped when the secret is absent, e.g. fork PRs)
+        env:
+          ANDY_DENYLIST_CONTENT: ${{ secrets.ANDY_DENYLIST }}
+        run: |
+          if [ -n "$ANDY_DENYLIST_CONTENT" ]; then
+            printf '%s\n' "$ANDY_DENYLIST_CONTENT" > "$RUNNER_TEMP/denylist.txt"
+            ANDY_DENYLIST="$RUNNER_TEMP/denylist.txt" bash scripts/leak-scan.sh
+          else
+            echo "No denylist secret, skipping leak scan."
+          fi
