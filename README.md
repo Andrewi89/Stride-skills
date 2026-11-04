@@ -20,7 +20,7 @@ To also copy my global `CLAUDE.md` (the engineering principles) onto a new machi
 
 | Plugin | Skills |
 |---|---|
-| `stride-design` | `apple-design-duo` (iPhone Duo), `expo-duo`, `apple-preflight` (App Store checks), `design-copy` (words in interfaces) |
+| `stride-design` | `apple-design-duo` (iPhone Duo), `expo-duo`, `apple-preflight` (App Store checks), `design-copy` (words in interfaces), `premium-feel` (why apps feel cheap, and how to make them feel expensive), `anti-slop-design` (websites that don't look vibe-coded), `mini-design-system` (a brand guide AI can follow), `live-activities` (Dynamic Island and widgets) |
 | `stride-writing` | `conversational-tone-of-voice` (my voice), `anti-slop-writing` (banned words and patterns), `ogilvy-copy` (selling copy) |
 | `stride-marketing` | `marketing` (positioning and channels), `product-led-growth`, `product-naming` (finding a name that isn't safe) |
 | `stride-steering` | `engineering-principles` (simple, fast-moving, no enterprise habits), `antigravity-driven-development` (Gemini does the grunt work, Claude reviews) |

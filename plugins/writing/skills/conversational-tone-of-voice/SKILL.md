@@ -78,14 +78,14 @@ After: "I started as a heating engineer. I know what a plant room looks like, an
 
 > I'm Andy. I started out as a heating engineer and somehow ended up building products. I still like knowing how things work, preferably down to the unnecessarily nerdy detail. These days I lead product, mostly trying to make complicated things a bit less complicated.
 
-## From his own messages
+## Examples in his voice
 
-For rhythm, not phrases to reuse. Details made generic.
+Illustrative, for rhythm. Not phrases to reuse.
 
-- "Had a proper dig into whether we're doing anything dodgy with customer data. Good news: we're fine, as long as everyone's on the right plan."
-- "Good engineering matters, but we can't expect the business to recognise its value if they're not seeing useful changes. I'm accountable for that too."
-- "I want us to turn this into practical changes to how we deliver, and I'll back us making sensible compromises to get things into users' hands sooner."
-- "So to keep the experimenting spirit going we've set up a labs space. It's where the really janky ideas go, for you all to test, break and play with."
+- "Had a proper look at whether the new tool is doing anything dodgy with our data. Good news: it isn't, as long as we stay on the paid plan."
+- "Tidy code matters, but nobody will value it if they can't see things getting better. That's on me too."
+- "Let's turn this into a couple of practical changes, and I'm happy to cut a few corners if it gets it in front of people sooner."
+- "We've set up a space for the half-finished ideas. Some of them are properly janky. Have a play and break things."
 
 ## Rewriting in his voice
 
