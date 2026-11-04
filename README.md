@@ -22,7 +22,7 @@ To also copy my global `CLAUDE.md` (the engineering principles) onto a new machi
 |---|---|
 | `design` | `apple-design-duo` (iPhone Duo), `expo-duo`, `apple-preflight` (App Store checks), `design-copy` (words in interfaces) |
 | `writing` | `conversational-tone-of-voice` (my voice), `anti-slop-writing` (banned words and patterns), `ogilvy-copy` (selling copy) |
-| `marketing` | `marketing` (positioning and channels), `product-led-growth` |
+| `marketing` | `marketing` (positioning and channels), `product-led-growth`, `product-naming` (finding a name that isn't safe) |
 | `steering` | `engineering-principles` (simple, fast-moving, no enterprise habits) |
 
 ## Skills I use alongside these
@@ -60,7 +60,7 @@ To install the lot in one go (needs Node and the Claude Code CLI):
 
 ### Built into claude.ai
 
-`product-naming`, `docx`, `pdf`, `pptx`, `xlsx` and `skill-creator` are Anthropic's own skills. Turn them on in claude.ai's skill settings.
+`docx`, `pdf`, `pptx`, `xlsx` and `skill-creator` are Anthropic's own skills. Turn them on in claude.ai's skill settings.
 
 `ogilvy-copy` here is modified from the `ogilvy` skill in [boraoztunc/skills](https://github.com/boraoztunc/skills) by Bora (Apache 2.0, licence copy alongside it).
 

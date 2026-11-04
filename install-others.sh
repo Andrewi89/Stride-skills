@@ -28,4 +28,4 @@ if [ ${#failed[@]} -gt 0 ]; then
 else
   echo "All done. Restart Claude Code to load them."
 fi
-echo "Anthropic's built-ins (product-naming, docx, pdf, pptx, xlsx) are switched on in claude.ai settings."
+echo "Anthropic's built-ins (docx, pdf, pptx, xlsx) are switched on in claude.ai settings."
