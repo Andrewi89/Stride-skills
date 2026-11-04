@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+# Dispatch one unit of grunt work to the antigravity CLI (agy) in print mode.
+#
+# This is the whole point of the skill: agy reads its instructions and task
+# brief FROM FILES, explores + edits + runs tests inside WORKTREE_DIR, writes
+# its full report TO A FILE, and prints only a short status line to stdout.
+# That short status line is all that returns to the controller's (Claude's)
+# context - agy's reading, reasoning, code, and test output never touch the
+# main session. That is where the token saving comes from.
+#
+# Usage: agy-run WORKTREE_DIR MODEL PROMPT_FILE [--continue] [--timeout DUR]
+#   WORKTREE_DIR  isolated git worktree agy works in (becomes agy's cwd)
+#   MODEL         exact agy model string, e.g. "Gemini 3.5 Flash (High)"
+#                 (run `agy models` for the current list)
+#   PROMPT_FILE   file holding the dispatch prompt (kept out of Claude's context)
+#   --continue    resume agy's most recent conversation - use ONLY for a fix on
+#                 the SAME task right after, to reuse prior reading instead of
+#                 re-paying for it. Never for a fresh task (keep its context clean).
+#   --timeout DUR Go-duration print timeout (default 20m). Big tasks need more.
+#
+# agy runs with --dangerously-skip-permissions so the loop is hands-off; the
+# git worktree is what bounds the blast radius. Swap for --sandbox if you want
+# risky commands gated (but expect the loop to stall on prompts).
+set -euo pipefail
+
+if [ $# -lt 3 ]; then
+  echo "usage: agy-run WORKTREE_DIR MODEL PROMPT_FILE [--continue] [--timeout DUR]" >&2
+  exit 2
+fi
+
+wt=$1; model=$2; prompt_file=$3; shift 3
+
+cont=""
+timeout="20m"
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --continue) cont="--continue"; shift ;;
+    --timeout)  timeout="${2:?--timeout needs a value}"; shift 2 ;;
+    *) echo "unknown arg: $1" >&2; exit 2 ;;
+  esac
+done
+
+[ -d "$wt" ] || { echo "no such worktree dir: $wt" >&2; exit 2; }
+[ -f "$prompt_file" ] || { echo "no such prompt file: $prompt_file" >&2; exit 2; }
+command -v agy >/dev/null || { echo "agy not on PATH - is the antigravity CLI installed?" >&2; exit 127; }
+
+cd "$wt"
+agy -p "$(cat "$prompt_file")" \
+  --model "$model" \
+  --dangerously-skip-permissions \
+  --print-timeout "$timeout" \
+  $cont

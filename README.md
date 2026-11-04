@@ -23,7 +23,7 @@ To also copy my global `CLAUDE.md` (the engineering principles) onto a new machi
 | `stride-design` | `apple-design-duo` (iPhone Duo), `expo-duo`, `apple-preflight` (App Store checks), `design-copy` (words in interfaces) |
 | `stride-writing` | `conversational-tone-of-voice` (my voice), `anti-slop-writing` (banned words and patterns), `ogilvy-copy` (selling copy) |
 | `stride-marketing` | `marketing` (positioning and channels), `product-led-growth`, `product-naming` (finding a name that isn't safe) |
-| `stride-steering` | `engineering-principles` (simple, fast-moving, no enterprise habits) |
+| `stride-steering` | `engineering-principles` (simple, fast-moving, no enterprise habits), `antigravity-driven-development` (Gemini does the grunt work, Claude reviews) |
 
 ## Skills I use alongside these
 
@@ -63,6 +63,8 @@ To install the lot in one go (needs Node and the Claude Code CLI):
 `docx`, `pdf`, `pptx`, `xlsx` and `skill-creator` are Anthropic's own skills. Turn them on in claude.ai's skill settings.
 
 `ogilvy-copy` here is modified from the `ogilvy` skill in [boraoztunc/skills](https://github.com/boraoztunc/skills) by Bora (Apache 2.0, licence copy alongside it).
+
+`anti-slop-writing` borrows patterns and its editing method from [humanizer](https://github.com/blader/humanizer) by Siqi Chen (MIT). `antigravity-driven-development` builds on superpowers' `subagent-driven-development` (MIT, licence copy alongside it).
 
 ## Keeping it clean
 
