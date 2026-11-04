@@ -8,10 +8,10 @@ Inside Claude Code:
 
 ```
 /plugin marketplace add Andrewi89/Stride-skills
-/plugin install design@stride-skills
-/plugin install writing@stride-skills
-/plugin install marketing@stride-skills
-/plugin install steering@stride-skills
+/plugin install stride-design@stride-skills
+/plugin install stride-writing@stride-skills
+/plugin install stride-marketing@stride-skills
+/plugin install stride-steering@stride-skills
 ```
 
 To also copy my global `CLAUDE.md` (the engineering principles) onto a new machine, clone the repo and run `./install.sh`. It asks before replacing your file and keeps a dated backup.
@@ -20,10 +20,10 @@ To also copy my global `CLAUDE.md` (the engineering principles) onto a new machi
 
 | Plugin | Skills |
 |---|---|
-| `design` | `apple-design-duo` (iPhone Duo), `expo-duo`, `apple-preflight` (App Store checks), `design-copy` (words in interfaces) |
-| `writing` | `conversational-tone-of-voice` (my voice), `anti-slop-writing` (banned words and patterns), `ogilvy-copy` (selling copy) |
-| `marketing` | `marketing` (positioning and channels), `product-led-growth`, `product-naming` (finding a name that isn't safe) |
-| `steering` | `engineering-principles` (simple, fast-moving, no enterprise habits) |
+| `stride-design` | `apple-design-duo` (iPhone Duo), `expo-duo`, `apple-preflight` (App Store checks), `design-copy` (words in interfaces) |
+| `stride-writing` | `conversational-tone-of-voice` (my voice), `anti-slop-writing` (banned words and patterns), `ogilvy-copy` (selling copy) |
+| `stride-marketing` | `marketing` (positioning and channels), `product-led-growth`, `product-naming` (finding a name that isn't safe) |
+| `stride-steering` | `engineering-principles` (simple, fast-moving, no enterprise habits) |
 
 ## Skills I use alongside these
 

@@ -8,25 +8,25 @@
   },
   "plugins": [
     {
-      "name": "design",
+      "name": "stride-design",
       "source": "./plugins/design",
       "description": "Apple-style interface design skills and design copy.",
       "category": "design"
     },
     {
-      "name": "writing",
+      "name": "stride-writing",
       "source": "./plugins/writing",
       "description": "Conversational voice, anti-slop rules and Ogilvy-style copy.",
       "category": "productivity"
     },
     {
-      "name": "marketing",
+      "name": "stride-marketing",
       "source": "./plugins/marketing",
       "description": "Marketing and product-led growth for tech products.",
       "category": "productivity"
     },
     {
-      "name": "steering",
+      "name": "stride-steering",
       "source": "./plugins/steering",
       "description": "Engineering principles and working preferences.",
       "category": "productivity"

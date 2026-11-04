@@ -15,5 +15,5 @@ cp claude/CLAUDE.md ~/.claude/CLAUDE.md
 
 echo "Now run these inside Claude Code:"
 echo "  /plugin marketplace add Andrewi89/Stride-skills"
-echo "  /plugin install design@stride-skills writing@stride-skills marketing@stride-skills steering@stride-skills"
+echo "  /plugin install stride-design@stride-skills stride-writing@stride-skills stride-marketing@stride-skills stride-steering@stride-skills"
 echo "For the other skills I use, run ./install-others.sh (credits in README.md)."
